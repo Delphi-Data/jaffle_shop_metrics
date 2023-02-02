@@ -40,8 +40,8 @@ final as (
         customer_orders.first_order,
         customer_orders.most_recent_order,
         case 
-            when most_recent_order <= '2018-01-15' then 'Churned'
-            when most_recent_order <= '2018-03-01' then 'Churn Risk'
+            when most_recent_order <= '2022-01-15' then 'Churned'
+            when most_recent_order <= '2022-03-01' then 'Churn Risk'
             else 'Healthy'
         end as customer_status,
         customer_orders.number_of_orders
