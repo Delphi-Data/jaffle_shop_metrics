@@ -59,6 +59,10 @@ models:
         description: Whether the order had payment by coupon
         tests:
           - not_null
+        meta:
+          dimension:
+            label: 'Paid with Coupon'
+
 
       - name: had_bank_transfer_payment
         description: Whether the order had payment by bank transfer
